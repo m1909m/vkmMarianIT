@@ -13,76 +13,62 @@
       <div class="container col-sm-8 col-md-9">
         <header>
 
-          <%= render 'layouts/navigation' %>
+          <%= render 'layouts/headerLogo' %>
         </header>
-        <main role="main">
+
+        <div class="navbar navbar-default" role="navigation">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" style="border-bottom: 5px solid #f46720; width: 100%;">
+              <li><a href="#">Aktuelles</a></li>
+              <li><a href="#">Verband</a></li>
+              <li><a href="#">Mitgliedschaft</a></li>
+              <li><a href="#">Fortbildung</a></li>
+              <li><a href="#">Shop / Arbeithilfen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <main role="main" class="container-fluid">
            <%= render 'layouts/messages' %>
            <%= yield %>
         </main>
+      <div class="topSize col-sm-4 col-md-3">
+        <nav id="navbar-right" class="nav" style="margin-top:15px;">
+          <form class="navbar-form" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Suchen" style="float: left;width: 80%;">
+              <button type="submit" class="btn btn-default" style="width: 20%;">Los</button>
+            </div>
+          </form>
+          <ul class="nav">
+
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Zugangsbereich</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">ARK-RWL</a></li>
+            <li><a href="#">ARK-DD</a></li>
+          </ul>
+
+        </nav>
       </div>
+      <!--
+        <footer class="footer col-md-9">
+
+        </footer> -->
     </div>
   </body>
 </html>
 
 
 
-    <header> <!-- class="col-md-9"> -->
-      <!--<img class="img-responsive img-center" src="http://fluegge-groemitz.de/wp-content/uploads/2016/07/Logo.png"> -->
 
-
-    </header>
-    <div class="navbar navbar-default" role="navigation">
-
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav" style="border-bottom: 5px solid #f46720; width: 100%;">
-          <li><a href="#">Aktuelles</a></li>
-          <li><a href="#">Verband</a></li>
-          <li><a href="#">Mitgliedschaft</a></li>
-          <li><a href="#">Fortbildung</a></li>
-          <li><a href="#">Shop / Arbeithilfen</a></li>
-        </ul>
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-
-  <div class="topSize col-sm-4 col-md-3">
-    <nav id="navbar-right" class="nav" style="margin-top:15px;">
-      <form class="navbar-form" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Suchen" style="float: left;width: 80%;">
-          <button type="submit" class="btn btn-default" style="width: 20%;">Los</button>
-        </div>
-      </form>
-      <ul class="nav">
-
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Zugangsbereich</a></li>
-        <li><a href="#">Download</a></li>
-        <li><a href="#">ARK-RWL</a></li>
-        <li><a href="#">ARK-DD</a></li>
-      </ul>
-
-    </nav>
-  </div> <!-- /container -->
-  <!--
-  <footer class="footer col-md-9">
-
-  </footer>
--->
-</div>
-<!-- Das JavaScript am Ende der Seite-->
-</body>
